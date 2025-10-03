@@ -1,0 +1,18 @@
+{
+	"name": "my-first-worker",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev --test-scheduled",
+		"start": "wrangler dev --test-scheduled",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"typescript": "^5.5.2",
+		"wrangler": "^4.41.0"
+	},
+	"dependencies": {
+		"axios": "^1.12.2"
+	}
+}
