@@ -88,7 +88,7 @@ async function sendEmail(env: Env, events: Event[]) {
 	const emailServer = new Resend(env.RESEND_SMTP_API_KEY)
 	emailServer.emails.send({
 		from: 'onboarding@resend.dev',
-		to: 'gituprajna20@gmail.com',
+		to: ['gituprajna20@gmail.com', 'mohdajmalbaig@gmail.com', 'prajnaprayas1@gmail.com'],
 		subject: `Upcoming Concerts in Delhi-NCR- ${new Date().toLocaleDateString()}`,
 		html: generateEmailHTML(events)
 	})
